@@ -14,8 +14,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './component/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
-import { CategoriaReadComponent } from './component/views/categoria/categoria-read/categoria-read.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
+import { CategoriaReadComponent } from './component/views/categoria/categoria-read/categoria-read.component';
 
 
 
@@ -39,7 +40,8 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatCardModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
