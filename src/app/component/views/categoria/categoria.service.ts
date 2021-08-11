@@ -10,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class CategoriaService {
 
-    baseUrl: string = environment.baseUrl;
+    baseUrl: String = environment.baseUrl;
 
   constructor(private http: HttpClient, private _snack: MatSnackBar) { }
   
@@ -39,7 +39,7 @@ export class CategoriaService {
     return this.http.put<void>(url, categoria)
   }
 
-  mensagem(str: string): void {
+  mensagem(str: String): void {
     this._snack.open(`${str}`, 'OK', {
       horizontalPosition: 'end',
       verticalPosition: 'top',
