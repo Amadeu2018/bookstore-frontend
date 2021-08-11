@@ -4,11 +4,11 @@ import { Livro } from '../livro.model';
 import { LivroService } from '../livro.service';
 
 @Component({
-  selector: 'app-livro-delete',
-  templateUrl: './livro-delete.component.html',
-  styleUrls: ['./livro-delete.component.css']
+  selector: 'app-livro-read',
+  templateUrl: './livro-read.component.html',
+  styleUrls: ['./livro-read.component.css']
 })
-export class LivroDeleteComponent implements OnInit {
+export class LivroReadComponent implements OnInit {
 
   id_cat: string = '';
 
@@ -39,13 +39,5 @@ findById(): void {
     this.livro = resposta;
   })
 }
-delete(): void {
-  this.service.delete(this.livro.id!).subscribe(() => {
-    this.router.navigate([`categorias/${this.id_cat}/livros`]);
-    this.service.mensagem('Livro eliminado com sucesso!')
-  }, err => {
-    this.router.navigate([`categorias/${this.id_cat}/livros`]);
-    this.service.mensagem('Falha ao eliminar livro! Tente mais tarde...')
-  })
-}
+
 }
