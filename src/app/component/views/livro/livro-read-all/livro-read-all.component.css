@@ -18,6 +18,17 @@ button {
     margin-bottom: .8rem;    
 }
 
+.buttons {
+    width: 100%;
+    text-align: start;
+}
+
+button {
+    margin-right: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
 .table
 {
     width: 100%;

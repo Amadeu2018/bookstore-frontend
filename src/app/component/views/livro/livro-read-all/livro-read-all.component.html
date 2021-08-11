@@ -3,9 +3,12 @@
     <div class="title">
         <h1>LIVROS</h1>
     </div>
-
-    <button class="mat-elevation-z8" (click)="navegarParaCriarLivro()" mat-stroked-button color="primary">NOVO LIVRO</button>
-
+    <div class="buttons">
+        <button class="mat-elevation-z8" (click)="navegarParaCriarLivro()" mat-stroked-button color="primary">NOVO LIVRO</button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn">Voltar</button>
+    
+    </div>
+    
 
     <div class="mat-elevation-z8 content-table">
         <table class="table" mat-table [dataSource]="livros">
@@ -49,4 +52,5 @@
             <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
         </table>
     </div>
+    
 </div>
